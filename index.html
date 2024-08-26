@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input,
+        .total {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 10px;
+            width: 80px;
+            text-align: center;
+        }
+
+        .total {
+            background-color: #e0f7fa;
+        }
+
+        p {
+            font-size: 24px;
+            margin: 10px;
+        }
+
+        h3 {
+            color: #666;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Sum of Two Numbers</h1>
+        <div class="input-group">
+            <input id="num-1" class="input" type="number" placeholder="0">
+            <p>+</p>
+            <input id="num-2" class="input" type="number" placeholder="0">
+        </div>
+        <h3>Final Output</h3>
+        <input id="total" class="total" type="number" readonly>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
